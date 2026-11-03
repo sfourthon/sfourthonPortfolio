@@ -11,28 +11,36 @@ Univers multi-étages construit sur des interfaces fournies, avec contrôles cla
 
 ## Lancer le projet
 
-Prérequis : JDK [VERSION_JDK] ou plus récent. JavaFX est téléchargé automatiquement par Maven, il n'y a rien d'autre à installer.
+Prérequis : un JDK 11 ou plus récent (testé avec les versions 11 et 17 recommandées) et [Maven](https://maven.apache.org/). JavaFX et les autres bibliothèques sont téléchargés automatiquement par Maven au premier lancement. Les Mac à puce Apple (M1, M2...) ne sont pas pris en charge, à cause de la version de JavaFX utilisée.
 
-### Avec un IDE (le plus simple)
-
-Le projet utilise Maven, donc tous les IDE le reconnaissent :
-
-- **IntelliJ IDEA** : *File → Open*, choisir le fichier `pom.xml`, puis *Open as Project*. Attendre la fin du téléchargement des dépendances, ouvrir la classe `[CLASSE_MAIN_LABYRINTHE]` et cliquer sur la flèche verte.
-- **VS Code** : installer l'extension *Extension Pack for Java*, ouvrir ce dossier, puis lancer la classe `[CLASSE_MAIN_LABYRINTHE]`.
-- **Eclipse** : *File → Import → Existing Maven Projects*, choisir ce dossier, puis lancer la classe `[CLASSE_MAIN_LABYRINTHE]`.
-- **NetBeans** : *File → Open Project*, choisir ce dossier, puis *Run Project*.
+Le programme doit être lancé **depuis ce dossier** : il charge les images (`icons`) et les étages (`etages`) avec des chemins relatifs.
 
 ### En ligne de commande
 
-Il faut Maven installé. Depuis ce dossier :
-
 ```
+git clone https://github.com/sfourthon/sfourthonPortfolio.git
+cd sfourthonPortfolio/labyrinthe
 mvn clean javafx:run
 ```
+
+### Avec un IDE
+
+Le projet utilise Maven : tous les IDE le reconnaissent. La classe principale est `application.MainJavaFX`.
+
+- **NetBeans** : *File → Open Project*, choisir ce dossier, puis *Run Project*.
+- **IntelliJ IDEA** : *File → Open*, choisir `pom.xml`, puis *Open as Project*. Attendre la fin de l'import Maven, ouvrir `application.MainJavaFX` et cliquer sur la flèche verte. Dans *Run → Edit Configurations*, vérifier que *Working directory* est bien ce dossier.
+- **VS Code** : installer *Extension Pack for Java*, ouvrir ce dossier, ouvrir `application.MainJavaFX` et cliquer sur *Run*.
+- **Eclipse** : *File → Import → Existing Maven Projects*, choisir ce dossier, puis lancer `application.MainJavaFX`.
+
+## Commandes du jeu
+
+- Flèches du clavier : déplacer le héros
+- `M` : monter un escalier
+- `D` : descendre un escalier
 
 ## Structure
 
 - `src` : code source
 - `etages` : fichiers de description des étages
 - `icons` : images du jeu
-- `pom.xml` : configuration Maven (dépendances, JavaFX)
+- `pom.xml` : configuration Maven (JavaFX, JUnit, JGraphT)
