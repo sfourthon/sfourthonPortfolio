@@ -6,6 +6,9 @@ Univers multi-étages construit sur des interfaces fournies, avec contrôles cla
 
 **Compétences travaillées :** JavaFX, interfaces, classes abstraites, polymorphisme, `equals`/`hashCode`, `List`, `Map`, `Set`.
 
+## Résultat
+<img width="818" height="860" alt="image" src="https://github.com/user-attachments/assets/fc3edfcd-3f33-478a-ab08-7b74d1ceada0" />
+
 ## Lancer le projet
 
 Prérequis : JDK [VERSION_JDK] ou plus récent. JavaFX est téléchargé automatiquement par Maven, il n'y a rien d'autre à installer.
