@@ -6,6 +6,9 @@ Station météo personnelle couplée à une chaudière, affichée en mode texte 
 
 **Compétences travaillées :** Java, JUnit, algorithmique, traitement de données.
 
+## Résultat
+<img width="754" height="403" alt="image" src="https://github.com/user-attachments/assets/65d2d406-0a1e-452d-88d0-e9d687f9e865" />
+
 ## Lancer le projet
 
 Prérequis : JDK [VERSION_JDK] ou plus récent.
@@ -40,3 +43,8 @@ javac -d out (Get-ChildItem -Recurse -Filter *.java src).FullName
 - `src` : code source
 - `test` : tests unitaires JUnit
 - `nbproject`, `build.xml` : configuration NetBeans
+
+
+
+
+
