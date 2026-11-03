@@ -9,6 +9,9 @@ Station météo personnelle couplée à une chaudière, affichée en mode texte 
 ## Résultat
 <img width="754" height="403" alt="image" src="https://github.com/user-attachments/assets/65d2d406-0a1e-452d-88d0-e9d687f9e865" />
 
+<img width="818" height="433" alt="image" src="https://github.com/user-attachments/assets/27114985-5b26-4e13-bb94-3a95b2d9c844" />
+
+
 ## Lancer le projet
 
 Prérequis : JDK [VERSION_JDK] ou plus récent.
